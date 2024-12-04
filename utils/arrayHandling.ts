@@ -10,5 +10,6 @@ export const rotate45 = (matrix: string[][]): string[][] => {
     for( var j=0 ; j<matrix[0].length ; ++j )
         for( var i=0 ; i<matrix.length ; ++i ) rotated[i+j].push(matrix[i][j]);
 
+    // todo: fill up with empty strings to get the diamond shape
     return rotated;
 };
