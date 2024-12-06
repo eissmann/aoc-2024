@@ -2,6 +2,12 @@ import {getFileContent} from "../utils/fileHandling";
 
 const inputName = __dirname + '/puzzle-input'
 
+const log = (...items) => {
+    if (process.env.DEBUG) {
+        console.log(...items);
+    }
+}
+
 const solvePart1 = (values: string[]): number => {
     return 0;
 }
