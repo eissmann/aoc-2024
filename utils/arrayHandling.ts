@@ -13,3 +13,10 @@ export const rotate45 = (matrix: string[][]): string[][] => {
     // todo: fill up with empty strings to get the diamond shape
     return rotated;
 };
+
+export const chunk = (arr: string[], size: number):
+    string[][] =>
+    arr.reduce((result: string[][], _, index) =>
+            (index % size === 0 ? [...result,
+                arr.slice(index, index + size)] : result),
+        []);
